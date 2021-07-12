@@ -3,9 +3,9 @@
     <h2>サインアップ</h2>
     <input type="text" placeholder="Mail" v-model="username">
     <input type="password" placeholder="Password" v-model="password">
-    <button @click="signUp" class="btn btn-info" >Register</button>
+    <button @click="signUp" class="button" >登録</button>
     <p>サインインはこちらから
-      <router-link to="/signin">sign in now!!</router-link>
+      <router-link to="/signin">サインインしましょう</router-link>
     </p>
   </div>
 </template>

@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <router-link to="/signin" class="auth"><button class="button">サインイン</button></router-link>
     <h1>ついつい、飲みたくなるお酒、ちょっとだけ減らしてみませんか?</h1>
   </div>
 </template>
@@ -12,10 +13,8 @@ export default {
   name: 'Top',
   data () {
     return {
-      user_id: firebase.auth().currentUser.uid,
-      name: firebase.auth().currentUser.email,
-      newToDo: '',
-      todo_items: []
+      // user_id: firebase.auth().currentUser.uid,
+      // name: firebase.auth().currentUser.email
     }
   },
   methods: {

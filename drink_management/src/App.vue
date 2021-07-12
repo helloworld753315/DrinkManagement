@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <router-link to="/signin"><button class="button">サインイン</button></router-link>
     <router-view/>
   </div>
 </template>
@@ -36,6 +35,9 @@ a {
   height: 40px;
   border-radius: 12px;
   border: 1px solid rgb(195, 195, 195);
+}
+
+.auth button{
   display: block;
   margin: 15px 40px 15px auto;
 }
