@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <router-link to="/signin" class="auth"><button class="button">サインイン</button></router-link>
-    <h1>ついつい、飲みたくなるお酒、ちょっとだけ減らしてみませんか?</h1>
+    <h1>「飲みたいかも—」<br> ついつい、飲みたくなるお酒、ちょっとだけ減らしてみませんか?</h1>
   </div>
 </template>
 
