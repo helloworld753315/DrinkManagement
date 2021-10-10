@@ -3,35 +3,34 @@
     <router-link to="/signin" class="auth"
       ><button class="button" @click="signOut">
         サインアウト
-      </button></router-link
-    >
+      </button></router-link>
     <h1>ログインできてる</h1>
     <a href="#" class="btn-circle-flat">Drink</a>
   </div>
 </template>
 
 <script>
-import firebase from "firebase";
+import firebase from 'firebase'
 // const db = firebase.firestore()
 
 export default {
-  name: "Top",
-  data() {
+  name: 'Top',
+  data () {
     return {
       user_id: firebase.auth().currentUser.uid,
       name: firebase.auth().currentUser.email,
-      newToDo: "",
+      newToDo: '',
       todo_items: []
-    };
+    }
   },
   methods: {
-    signOut: function() {
+    signOut: function () {
       firebase
         .auth()
         .signOut()
         .then(() => {
-          this.$router.push("/");
-        });
+          this.$router.push('/')
+        })
     }
   }
   /*
@@ -39,7 +38,7 @@ export default {
 
   }
   */
-};
+}
 </script>
 
 <!-- Add 'scoped' attribute to limit CSS to this component only -->
